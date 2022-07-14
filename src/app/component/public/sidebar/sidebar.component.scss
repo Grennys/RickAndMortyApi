@@ -1,0 +1,46 @@
+nav ul {
+    font-family: 'Dancing Script', cursive;
+	list-style-type: none;
+	width: 100%;
+    
+}
+
+nav ul li {
+    font-family: 'Dancing Script', cursive;
+	font-size: 30px;
+    color: white;
+	// background-color: rgba(0, 0, 0, 0.945);
+	// border: 2px solid rgb(0, 0, 0);
+    border-radius: 30%;
+	// letter-spacing: 0.1em;
+	width: 10em;
+	height: 1.5em;
+	line-height: 1.5em;
+	position: relative;
+	overflow: hidden;
+	margin: 0.5em;
+	cursor: pointer;
+}
+
+nav ul li span {
+    border-radius: 50%;	
+	mix-blend-mode:normal ;
+}
+
+nav ul li::before {
+	content: '';
+    color: white;
+	position: absolute;
+	width: 1.5em;
+	height: inherit;
+	background-color: rgb(37, 255, 55, 0.3);	
+	border-radius: 50%;
+	top: 0;
+	left: -0.75em;
+	transition: 0.5s ease-out;
+}
+
+nav ul li:hover::before {
+	transform: scale(10);
+ 
+}
